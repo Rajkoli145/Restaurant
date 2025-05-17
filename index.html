@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen</title>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Header section -->
+    <header>
+        <nav>
+            <div class="logo">Kitchen.</div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#location">LOCATION</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="nav-icons">
+                <input type="checkbox" id="search-toggle" class="search-checkbox">
+                <label for="search-toggle" class="search-label">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+                <div class="search-container">
+                    <form action="#" method="GET" class="search-form">
+                        <input type="search" placeholder="Search..." class="search-input">
+                        <button type="submit" class="search-submit">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="assets/RestaurantVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Experience Culinary Excellence</h1>
+            <p>Welcome to Kitchen — where passion meets flavor.<br>Explore our handcrafted dishes made with love and the finest ingredients.</p>
+            <a href="#menu" class="btn-primary">Explore the Menu</a>
+        </div>
+
+    </section>
+
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu"> 
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <!-- Starters -->
+            <div class="menu-category">
+                <h3>Starters</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f" alt="Bruschetta">
+                        </div>
+                        <div class="item-header">
+                            <h4>Bruschetta</h4>
+                            <span class="price">₹149</span>
+                        </div>
+                        <p>Grilled bread rubbed with garlic, topped with diced tomatoes, fresh basil, and extra virgin olive oil</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0" alt="Calamari Fritti">
+                        </div>
+                        <div class="item-header">
+                            <h4>Calamari Fritti</h4>
+                            <span class="price">₹199</span>
+                        </div>
+                        <p>Crispy fried squid served with marinara sauce and lemon wedges</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="assets/French Onion Soup.jpg" alt="French Onion Soup">
+                        </div>
+                        <div class="item-header">
+                            <h4>French Onion Soup</h4>
+                            <span class="price">₹179</span>
+                        </div>
+                        <p>Classic soup with caramelized onions, rich beef broth, and melted Gruyère cheese</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Course -->
+            <div class="menu-category">
+                <h3>Main Course</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e" alt="Grilled Ribeye Steak">
+                        </div>
+                        <div class="item-header">
+                            <h4>Grilled Ribeye Steak</h4>
+                            <span class="price">₹599</span>
+                        </div>
+                        <p>12oz premium aged beef served with roasted potatoes and seasonal vegetables</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1485921325833-c519f76c4927" alt="Pan-Seared Salmon">
+                        </div>
+                        <div class="item-header">
+                            <h4>Pan-Seared Salmon</h4>
+                            <span class="price">₹499</span>
+                        </div>
+                        <p>Fresh Atlantic salmon with lemon butter sauce, wild rice, and asparagus</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371" alt="Truffle Mushroom Risotto">
+                        </div>
+                        <div class="item-header">
+                            <h4>Truffle Mushroom Risotto</h4>
+                            <span class="price">₹449</span>
+                        </div>
+                        <p>Creamy Arborio rice with wild mushrooms, finished with truffle oil and Parmesan</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category">
+                <h3>Desserts</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9" alt="Tiramisu">
+                        </div>
+                        <div class="item-header">
+                            <h4>Tiramisu</h4>
+                            <span class="price">₹149</span>
+                        </div>
+                        <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814" alt="Crème Brûlée">
+                        </div>
+                        <div class="item-header">
+                            <h4>Crème Brûlée</h4>
+                            <span class="price">₹179</span>
+                        </div>
+                        <p>Rich vanilla custard topped with caramelized sugar</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51" alt="Chocolate Lava Cake">
+                        </div>
+                        <div class="item-header">
+                            <h4>Chocolate Lava Cake</h4>
+                            <span class="price">₹199</span>
+                        </div>
+                        <p>Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="about">
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="RestaurantVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+    </div>
+    <div class="about-content">
+        <h2>Our Story</h2>
+        <p>Founded in 2010, Savory has been serving exceptional cuisine in an elegant atmosphere. Our commitment to quality and service has made us a destination for food lovers.</p>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Location</h3>
+                <p>Om Residency</p>
+                <p>Plot No 10, Sector 5, Ulwe,<br>Navi Mumbai, Maharashtra 410206</p>
+                <h3>Hours</h3>
+                <p>Mon-Sat: 11am - 10pm</p>
+                <p>Sunday: 12pm - 9pm</p>
+                <h3>Contact</h3>
+                <p>Phone: +91 9619554351</p>
+                <p>Email: koliraj911@gmail.com</p>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/xovdrklj" method="POST" data-formspree>
+                <input type="hidden" name="_redirect" value="." />
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Kitchen.</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2025 Savory Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
