@@ -7,6 +7,7 @@ A modern and responsive restaurant website built with HTML and CSS. This website
 - Responsive design that works on desktop and mobile devices
 - Clean and modern user interface
 - Menu display
+- 
 - Restaurant information
 
 ## Technologies Used
@@ -25,7 +26,7 @@ cd Restaurant
 
 ## Live Preview
 
-*Note: The website will be deployed to Netlify soon. The live preview link will be added here after deployment.*
+
 
 ## License
 
