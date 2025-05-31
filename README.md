@@ -20,7 +20,7 @@ A modern and responsive restaurant website built with HTML and CSS. This website
 To run this project locally, simply clone the repository and open the `index.html` file in your web browser.
 
 ```bash
-git clone [repository-url]
+git clone https://github.com/Rajkoli145/Restaurant.git
 cd Restaurant
 ```
 
