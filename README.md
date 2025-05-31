@@ -7,7 +7,6 @@ A modern and responsive restaurant website built with HTML and CSS. This website
 - Responsive design that works on desktop and mobile devices
 - Clean and modern user interface
 - Menu display
-- 
 - Restaurant information
 
 ## Technologies Used
