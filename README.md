@@ -24,6 +24,7 @@ cd Restaurant
 ```
 
 ## Live Preview
+ https://restaurant-webiste.netlify.app/
 
 
 
